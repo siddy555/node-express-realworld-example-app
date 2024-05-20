@@ -6,7 +6,7 @@ var CommentSchema = new mongoose.Schema({
   article: { type: mongoose.Schema.Types.ObjectId, ref: 'Article' }
 }, {timestamps: true});
 
-// Requires population of author test
+// Requires population of author test 1
 CommentSchema.methods.toJSONFor = function(user){
   return {
     id: this._id,
